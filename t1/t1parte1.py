@@ -1,4 +1,4 @@
-#1 - Calcular soma dos quadrados de dois números
+#1 - Calcula a soma dos quadrados de dois números x e y.
 def somaQuad(x,y):
 	return x**2+y**2
 
@@ -51,6 +51,12 @@ def auxIsEven(n):
 #9 - Verifica se o caracter 'c' esta contido na String 's'
 def charFound(c,s):
 	return s.count(c)>0
+
+def cFound(c,s):
+	def g(x):
+		return c==x
+	
+	return len(list(filter(g,s)))>0
 
 #10 - Retorna uma lista com marcações HTML adicionada para cada String da lista
 def addHTML(l):
