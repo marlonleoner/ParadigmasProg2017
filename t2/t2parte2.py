@@ -23,7 +23,7 @@ def applyStyles(rects, styles):
 
 # TODO: modifique essa funcao para gerar mais retangulos
 def genRects(n, w, h):
-   return [(((x*w),0.0),w,h) if ((x+1)*w)<1000 else (((x*w),h),w,h) for x in range(n)]
+   return [(((x*w),0.0),w,h) for x in range(n)]
 
 def writeFile(fname, contents):
    f = open(fname, 'w')
@@ -35,7 +35,7 @@ def genColors(n):
 
 def main():
    maxWidth = 1000
-   maxHeight = 300
+   maxHeight = 100
    rects = genRects(10,50,50)
    styles = genColors(10);
    rectstyles = applyStyles(rects, styles)
