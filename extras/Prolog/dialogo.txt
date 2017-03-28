@@ -1,0 +1,36 @@
+marlonleoner@MarlonLeoner:~/UFSM/Paradigmas de Programação/Prolog$ swipl
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 7.2.3)
+Copyright (c) 1990-2015 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- [eliza].
+
+
+Hello. I am ELIZA. How can I help you?
+> Hello. I'm Marlon.
+
+How do you do. Please state your problem.
+> fine. i don't have problems
+
+Do you not really have problems?
+> yes. my teacher asked me to talk with you
+
+Your teacher asked you to talk with i?
+> i have to know how you work
+
+Perhaps in your fantasy we have to know what each other?
+> what?
+
+Why do you ask?
+> how do you work?
+
+Does that question interest you?
+> yes. 
+
+You seem quite positive.
+> really?
+
