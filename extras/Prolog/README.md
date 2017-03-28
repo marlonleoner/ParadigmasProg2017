@@ -24,7 +24,7 @@ rules([[dream,3],[
 
 ## Transformar para minusculo `lower_case()`
 
-No trecho de código abaixo acontece a transformação de letras maiúsculas para minúsculas
+No trecho de código abaixo acontece a transformação de letras maiúsculas para minúsculas:
 ```prolog
 lower_case(X,Y) :-
 	X >= 65,
