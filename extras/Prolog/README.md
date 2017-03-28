@@ -2,8 +2,16 @@
 
 ## Fatos `rules`
 
-O código da Eliza identifica a palavra-chave da frase que o usuário digitou e retorna alguma resposta, dentre as possiveis, relacionada com a palavra-chave. No exemplo abaixo temos o como palavra chave "dream":
-
+O código da Eliza identifica a palavra-chave da frase que o usuário digitou e retorna alguma resposta, dentre as possiveis, relacionada com a palavra-chave. Segue abaixo o modelo:
+```prolog
+% rules([[keyword, importance of keyword],[
+%         [pattern #, [the pattern], last response used,
+%             [response 1],
+%             [response 2],
+%             ...
+%             [response n]]]]).
+```
+Exemplo com a palavra-chave "dream":
 ```prolog
 rules([[dream,3],[
 	[1,[_],0,
