@@ -4,12 +4,12 @@
 
 O código da Eliza identifica a palavra-chave da frase que o usuário digitou e retorna alguma resposta, dentre as possiveis, relacionada com a palavra-chave. Segue abaixo o modelo:
 ```prolog
-% rules([[keyword, importance of keyword],[
-%         [pattern #, [the pattern], last response used,
-%             [response 1],
-%             [response 2],
-%             ...
-%             [response n]]]]).
+rules([[keyword, importance of keyword],[
+        [pattern #, [the pattern], last response used,
+            [response 1],
+            [response 2],
+            ...
+            [response n]]]]).
 ```
 Exemplo com a palavra-chave "dream":
 ```prolog
