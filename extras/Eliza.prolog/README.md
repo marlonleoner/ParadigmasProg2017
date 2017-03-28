@@ -1,6 +1,6 @@
 # Eliza
 
-## Fatos `rules()`
+## `rules()`
 
 O código da Eliza identifica a palavra-chave da frase que o usuário digitou e retorna alguma resposta, dentre as possiveis, relacionada com a palavra-chave. Segue abaixo o modelo:
 ```prolog
@@ -22,7 +22,7 @@ rules([[dream,3],[
 		[newkey]]]]).
 ``` 
 
-## Transformar para minusculo `lower_case()`
+## `lower_case()`
 
 No trecho de código abaixo acontece a transformação de letras maiúsculas para minúsculas:
 ```prolog
