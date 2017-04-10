@@ -14,7 +14,7 @@ Utilizando a seguinte base de fatos e regras:
    ?- avo(joao,Y).
    false.
    ```
-   First Header  | Second Header
+   Prolog dialog/trace output  | Comentarios
    ------------- | -------------
    Content Cell  | Content Cell
    Content Cell  | Content Cell
