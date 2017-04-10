@@ -14,6 +14,13 @@ Utilizando a seguinte base de fatos e regras:
    ?- avo(joao,Y).
    false.
    ```
+|                                                                                                                                                Prolog dialog/trace output                                                                                                                                               | Comentários |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|-------------|
+| ?- [t3parte1]. true.  ?- trace. true.  [trace]    ?- avo(joao, Y).     Call: (7) avo(joao, _G2290) ? creep     Call: (8) pai(joao, _G2366) ? creep     Exit: (8) pai(joao, jose) ? creep     Call: (8) pai(jose, _G2290) ? creep     Fail: (8) pai(jose, _G2290) ? creep     Fail: (7) avo(joao, _G2290) ? creep false. |             |
+
+
+
+
    Prolog dialog/trace output  | Comentarios
    ------------- | -------------
    ?- [t3parte1]. | "Include" do arquivo t3parte1.pl
