@@ -29,7 +29,7 @@ Utilizando a seguinte base de fatos e regras:
       Call: (8) pai(jose, _G2290) ? creep | Chamada da regra pai, buscando um valor para Y, quando X = jose
       Fail: (8) pai(jose, _G2290) ? creep | Falha(pai). Não encontrou um valor para Y, quando X = jose
       Fail: (7) avo(joao, _G2290) ? creep | Falha(avo). Não encontrou um valor para Y, quando X = joao
-   false.
+   false. | Falha da Chama da regra avo
 
    Content Cell  | Content Cell
    Content Cell  | Content Cell
