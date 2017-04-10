@@ -18,10 +18,8 @@ Utilizando a seguinte base de fatos e regras:
    ------------- | -------------
    ?- [t3parte1]. | "Include" do arquivo t3parte1.pl
    true. |
-
    ?- trace. | Ligando tracing
    true. |
-
    [trace]  ?- avo(joao, Y). | Chamada da regra avo
       Call: (7) avo(joao, _G2290) ? creep | Trace faz consulta, substituindo Y por um valor unico 
       Call: (8) pai(joao, _G2366) ? creep | Chamada da regra pai, buscando um valor para Y, quando X = joao
@@ -30,9 +28,9 @@ Utilizando a seguinte base de fatos e regras:
       Fail: (8) pai(jose, _G2290) ? creep | Falha(pai). Não encontrou um valor para Y, quando X = jose
       Fail: (7) avo(joao, _G2290) ? creep | Falha(avo). Não encontrou um valor para Y, quando X = joao
    false. | Falha da Chama da regra avo
+   Content Cell  | Content Cell
+   Content Cell  | Content Cell
 
-   Content Cell  | Content Cell
-   Content Cell  | Content Cell
    ```
    ?- avo(roberto,Y).
    Y = jose ;
