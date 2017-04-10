@@ -17,10 +17,10 @@ Utilizando a seguinte base de fatos e regras:
    Prolog dialog/trace output  | Comentarios
    ------------- | -------------
    ?- [t3parte1]. | "Include" do arquivo t3parte1.pl
-   true.
+   true. |
 
    ?- trace. | Ligando tracing
-   true.
+   true. |
 
    [trace]  ?- avo(joao, Y). | Chamada da regra avo
       Call: (7) avo(joao, _G2290) ? creep | Trace faz consulta, substituindo Y por um valor unico 
