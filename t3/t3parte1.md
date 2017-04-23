@@ -15,6 +15,7 @@ Para a seguinte chama:
    false.
    ```
  temos o quadro abaixo:
+ 
    Prolog dialog/trace output  | Comentarios
    :------------- | -------------
    ?- [t3parte1]. | "Include" do arquivo t3parte1.pl
