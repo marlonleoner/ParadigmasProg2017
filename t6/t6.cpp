@@ -14,7 +14,9 @@ class Forma {
 
     public:
 
-        virtual double getArea() {  }
+        virtual double getArea() {
+            
+        }
 };
 
 class Circulo : public Forma {
@@ -105,9 +107,9 @@ class loteBiscoitos {
 
     private:
 
+        vector<Biscoito> lote;
         
     public:
-        vector<Biscoito> lote;
 
         loteBiscoitos() {  }
 
