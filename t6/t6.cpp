@@ -2,9 +2,9 @@
 #include <vector>
 #include <string>
 
-#include <stdlib.h>
+#include <stdlib.h> //rand && atoi
 
-#include <algorithm>
+#include <algorithm> //Sort
 
 using namespace std;
 
@@ -15,7 +15,7 @@ class Forma {
     public:
 
         virtual double getArea() {
-            
+
         }
 };
 
@@ -232,4 +232,5 @@ int main(int args, char** argv) {
 
     cout << "\nGanhos Previstos: R$ " << l.qtdPequenos() * 0.20 + l.qtdMedios() * 0.40 + l.qtdGrandes() * 0.60 << endl;
 
+    return 0;
 }
