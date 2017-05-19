@@ -226,11 +226,11 @@ int main(int args, char** argv) {
 	
     cout << l.toString() << endl;
 
-    cout << "Pequenos: " << l.qtdPequenos() << endl;
-    cout << "Médios: " << l.qtdMedios() << endl;
-    cout << "Grandes: " << l.qtdGrandes() << endl;
+    cout << "Pequenos: " << l.qtdPequenos() << " - Valor Arrecadado: R$ " << l.qtdPequenos() * 0.20 << endl;
+    cout << "Médios: " << l.qtdMedios() << " - Valor Arrecadado: R$ " << l.qtdMedios() * 0.40 <<  endl;
+    cout << "Grandes: " << l.qtdGrandes() << " - Valor Arrecadado: R$ " << l.qtdGrandes() * 0.60 <<  endl;
 
-    cout << "\nGanhos Previstos: R$ " << l.qtdPequenos() * 0.20 + l.qtdMedios() * 0.40 + l.qtdGrandes() * 0.60 << endl;
+    cout << "\nTotal Previstos: R$ " << l.qtdPequenos() * 0.20 + l.qtdMedios() * 0.40 + l.qtdGrandes() * 0.60 << endl;
 
     return 0;
 }
