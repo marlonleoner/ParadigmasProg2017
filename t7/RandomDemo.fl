@@ -1,0 +1,48 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0304
+header_name {.h}
+code_name {.cxx}
+class RandomDemo {open
+} {
+  Function {RandomDemo()} {open
+  } {
+    Fl_Window w {
+      label {Random Demo} open
+      xywh {562 164 390 365} type Single align 0 hide
+    } {
+      Fl_Input inputParticipantes {
+        label Participantes
+        xywh {110 125 165 30}
+      }
+      Fl_Button btnReset {
+        label Reset
+        xywh {290 125 85 30}
+      }
+      Fl_Button btnSortear {
+        label Sortear
+        xywh {15 320 360 35}
+      }
+      Fl_Box boxNrSorteado {
+        xywh {15 219 360 91} box DOWN_BOX
+      }
+      Fl_Box boxNrGanhador {
+        xywh {15 167 360 38}
+      }
+      Fl_Box boxLogo {
+        image {logo.jpeg} xywh {15 14 360 100}
+      }
+    }
+    Fl_Window wError {
+      label Erro open
+      xywh {426 165 390 115} type Single align 0 visible
+    } {
+      Fl_Button btnCloseError {
+        label Fechar
+        xywh {305 80 75 25}
+      }
+      Fl_Box boxError {selected
+        xywh {10 4 370 71}
+      }
+    }
+  }
+}
