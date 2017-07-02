@@ -13,7 +13,7 @@
 
 - Os arquivos de projeto possuem a extensão **.csv**;
 - Modelo de um projeto:
-  - 1ª linha - Title da página;
+  - 1ª linha - Title da página;
   - Demais linhas - Inputs
 - As linhas com inputs possuem a seguinte configuração:
   - Text: text;[Input ID];[Input Label]
