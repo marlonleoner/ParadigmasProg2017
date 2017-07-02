@@ -17,7 +17,7 @@
   - Demais linhas - Inputs
 - As linhas com inputs possuem a seguinte configuração:
   - Text: text;[Input ID];[Input Label]
-  - Select: select;[Input ID>;<Input Label>;<Op1>;<Op2>;<Op3>;[...];<OpN>
+  - Select: select;[Input ID];[Input Label];[Op1];[Op2];[Op3];[...];[OpN]
   - Radio: radio;[Input ID];[Input Label];[Op1];[Op2];[Op3];[...];[OpN]
 
 - Example.csv:
