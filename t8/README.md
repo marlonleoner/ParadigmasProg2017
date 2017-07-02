@@ -12,7 +12,7 @@
 ## Arquivos de Projeto
 
 - Os arquivos de projeto possuem a extensão **.csv**;
-- Os arquivos são salvos na pasta `project`
+- Os arquivos são salvos na pasta `project/`
 - Modelo de um projeto:
   - 1ª linha - Title da página;
   - Demais linhas - Inputs
@@ -26,3 +26,5 @@
   text;TextExampleID;Text Example <br/>
   select;SelectExampleID;Select Example;Op1;Op2;Op3;Op4;Op5 <br/>
   radio;RadioExampleID;Radio Example;Op1;Op2;Op3;Op4;Op5 <br/>
+  
+- O arquivo `index.html` é gerado na pasta `HTML/`
