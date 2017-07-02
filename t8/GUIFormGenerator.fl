@@ -1,0 +1,204 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0304
+header_name {.h}
+code_name {.cxx}
+class GUIFormGenerator {open
+} {
+  Function {GUIFormGenerator()} {open
+  } {
+    Fl_Window wIndex {
+      label {Form Generator}
+      xywh {508 375 390 365} type Single box UP_BOX color 55 align 0 hide
+    } {
+      Fl_Button btnNew_wI {
+        label {New Projeto}
+        xywh {90 215 210 30} box RFLAT_BOX
+      }
+      Fl_Button btnOpen_wI {
+        label {Open Project}
+        xywh {90 260 210 30} box RFLAT_BOX
+      }
+      Fl_Button btnQuit_wI {
+        label Quit
+        xywh {315 325 65 30} box ENGRAVED_BOX
+      }
+      Fl_Box boxLogo {
+        xywh {0 25 390 160}
+        code0 {Fl_PNG_Image* png = new Fl_PNG_Image("img/logo.png");}
+        code1 {boxLogo->image(png);}
+        code2 {\#include <FL/Fl_PNG_Image.H>}
+      }
+    }
+    Fl_Window wNewProject {
+      label {New Project}
+      xywh {667 294 415 85} type Double hide
+    } {
+      Fl_Input input_wNP {
+        label {Nome do novo projeto: }
+        xywh {5 26 405 24} align 5
+      }
+      Fl_Button btnCancel_wNP {
+        label Cancel
+        xywh {340 55 70 25}
+      }
+      Fl_Button btnNew_wNP {
+        label New
+        xywh {255 55 80 25}
+      }
+    }
+    Fl_Window wOpenProject {
+      label {Open Project}
+      xywh {60 309 425 165} type Double hide
+    } {
+      Fl_File_Browser browserProjects {
+        label {Your Projects}
+        xywh {5 20 415 110} type Hold align 5 hotspot
+        code1 {browserProjects->filter("*.csv");}
+        code2 {browserProjects->load("project");}
+      }
+      Fl_Button btnCancel_wOP {
+        label Cancel
+        xywh {350 135 70 25}
+      }
+      Fl_Button btnOpen_wOP {
+        label Open
+        xywh {275 135 70 25}
+      }
+    }
+    Fl_Window wEditProject {open
+      xywh {478 373 410 380} type Single color 55 align 0 hide
+    } {
+      Fl_Menu_Bar menu {open
+        xywh {0 0 410 25}
+      } {
+        MenuItem menuSave_wEP {
+          label {Save Project}
+          xywh {25 25 28 17}
+        }
+        MenuItem menuGenerate_wEP {
+          label {Gerar index.html}
+          xywh {0 0 36 20}
+        }
+      }
+      Fl_Input inputTitle {
+        label {Title: }
+        xywh {50 41 235 26} deactivate
+      }
+      Fl_Browser browserInputs {
+        label {Inputs: }
+        xywh {5 95 400 245} type Hold align 5
+      }
+      Fl_Button btnEditTitle_wEP {
+        label Edit selected
+        xywh {350 40 55 30} box ENGRAVED_BOX
+      }
+      Fl_Button btnSave_wEP {
+        label Save
+        xywh {290 40 55 30} box ENGRAVED_BOX deactivate
+      }
+      Fl_Button btnAdd_wEP {
+        label Add
+        xywh {5 345 65 30} box ENGRAVED_BOX
+      }
+      Fl_Button btnEdit_wEP {
+        label Edit
+        xywh {75 345 65 30} box ENGRAVED_BOX
+      }
+      Fl_Button btnQuit_wEP {
+        label Quit
+        xywh {340 345 65 30} box ENGRAVED_BOX
+      }
+      Fl_Button btnRemove_wEP {
+        label Remove
+        xywh {145 345 65 30} box ENGRAVED_BOX
+      }
+    }
+    Fl_Window wInputText {
+      label {Add Input - <text>}
+      xywh {541 426 325 135} type Double color 55 hide
+    } {
+      Fl_Input inputLabel_wIT {
+        label {Label: }
+        xywh {55 21 265 28} box THIN_UP_BOX
+      }
+      Fl_Input inputID_wIT {
+        label {ID: }
+        xywh {55 57 265 28} box THIN_UP_BOX
+      }
+      Fl_Button btnSave_wIT {
+        label {Save Input}
+        xywh {55 100 200 30} box ENGRAVED_BOX
+      }
+      Fl_Button btnCancel_wIT {
+        label Cancel
+        xywh {260 100 60 30} box ENGRAVED_BOX
+      }
+    }
+    Fl_Window wInputSelect {
+      label {Add Input - <select>}
+      xywh {524 299 335 320} type Double color 55 hide
+    } {
+      Fl_Input inputLabel_wIS {
+        label {Label: }
+        xywh {65 22 265 28} box THIN_UP_BOX
+      }
+      Fl_Input inputID_wIS {
+        label {ID: }
+        xywh {65 57 265 28} box THIN_UP_BOX
+      }
+      Fl_Button btnSave_wIS {
+        label {Save Input}
+        xywh {65 285 200 30} box ENGRAVED_BOX
+      }
+      Fl_Button btnCancel_wIS {
+        label Cancel
+        xywh {270 285 60 30} box ENGRAVED_BOX
+      }
+      Fl_Browser browserOp_wIS {
+        label Options
+        xywh {65 90 265 145} type Hold align 7
+      }
+      Fl_Button btnAddOp_wIS {
+        label {Add Op}
+        xywh {65 240 130 30}
+      }
+      Fl_Button btnRemoveOp_wIS {
+        label {Remove Op}
+        xywh {200 240 130 30}
+      }
+    }
+    Fl_Window wInputRadio {
+      label {Add Input - <radio>}
+      xywh {805 299 335 320} type Double color 55 hide
+    } {
+      Fl_Input inputLabel_wIR {
+        label {Label: }
+        xywh {65 22 265 28} box THIN_UP_BOX
+      }
+      Fl_Input inputID_wIR {
+        label {ID: }
+        xywh {65 57 265 28} box THIN_UP_BOX
+      }
+      Fl_Button btnSave_wIR {
+        label {Save Input}
+        xywh {65 285 200 30} box ENGRAVED_BOX
+      }
+      Fl_Button btnCancel_wIR {
+        label Cancel
+        xywh {270 285 60 30} box ENGRAVED_BOX
+      }
+      Fl_Browser browserOp_wIR {
+        label Options
+        xywh {65 90 265 145} align 7
+      }
+      Fl_Button btnAddOp_wIR {
+        label {Add Op}
+        xywh {65 240 125 30}
+      }
+      Fl_Button btnRemoveOp_wIR {
+        label {Remove Op}
+        xywh {205 240 125 30}
+      }
+    }
+  }
+}
