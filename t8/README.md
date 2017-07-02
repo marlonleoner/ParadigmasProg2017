@@ -21,7 +21,7 @@
   - Radio: radio;[Input ID];[Input Label];[Op1];[Op2];[Op3];[...];[OpN]
 
 - Example.csv:
-  - Example
+  - Example
   - text;TextExampleID;Text Example
   - select;SelectExampleID;Select Example;Op1;Op2;Op3;Op4;Op5
   - radio;RadioExampleID;Radio Example;Op1;Op2;Op3;Op4;Op5
