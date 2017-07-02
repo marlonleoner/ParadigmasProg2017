@@ -12,6 +12,7 @@
 ## Arquivos de Projeto
 
 - Os arquivos de projeto possuem a extensão **.csv**;
+- Os arquivos são salvos na pasta `project`
 - Modelo de um projeto:
   - 1ª linha - Title da página;
   - Demais linhas - Inputs
